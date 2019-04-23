@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.headline {
+    margin-top: 30px;
+}
+
+.headline img {
+    width: 15%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-left: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.main-nav {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.main {
+    text-align: center;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+.footer-nav{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+}
+
+/* color 1 1f8ef0 
+/* color 2 ede377
