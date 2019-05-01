@@ -6,50 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SEG|Projects</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1><img src="https://i.imgur.com/bCv20jf.png" alt="logo image" /></h1>
+        <h1><img src="https://i.imgur.com/5oFmurT.png" alt="logo image" /></h1>
         <nav class="main-nav" role="navigation">
             <a href="index.html">Home</a>
-            <a class="active" href="about.html">About</a>
-            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a class="active" href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="drop-down" role="navigation">
+            <div class="burger">
+                <i class="stripe"></i>
+                <i class="stripe"></i>
+                <i class="stripe"></i>
+            </div>
+            <div class="mobile-menu">
+                <a class="mobile-active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
     </header>
     <main role="main" class="main">
         <div class="headline">
             <h1>Projects</h1>
         </div>
-        <section class="quiz-app">
+        <div class="container">
+        <section class="project-container">
             <div class="project-title">
                 <h2>Austin, TX Quiz App Challenge</h2>
             </div>
-            <div class="hero-img">
+            <div class="hero">
                 <img src="https://i.imgur.com/sFlaznE.png" alt="launch image of Austin, TX quiz app" />
             </div>
             <div class="thumbnails">
-                <a class="js-thumbnail" href="#"><img src="https://i.imgur.com/50LjJJ0.png" alt="Questions and answers page of quiz app" /></a>
-                <a class="js-thumbnail" href="#"><img src="https://i.imgur.com/GibES4w.png" alt="Display when the user answers incorrectly" /></a>
-                <a class="js-thumbnail" href="#"><img src="https://i.imgur.com/buX7j7f.png" alt="Display when the user answers incorrectly" /></a>
-                <a class="js-thumbnail" href="#"><img src="https://i.imgur.com/SKEoUlw.png" alt="Results page of the app" /></a>
+                <a class="js-thumbnail" href="#" data-src="https://i.imgur.com/sFlaznE.png"><img src="https://i.imgur.com/sFlaznE.png" alt="launch image of Austin, TX quiz app" /></a>
+                <a class="js-thumbnail" href="#" data-src="https://i.imgur.com/50LjJJ0.png"><img src="https://i.imgur.com/50LjJJ0.png" alt="Questions and answers page of quiz app" /></a>
+                <a class="js-thumbnail" href="#" data-src="https://i.imgur.com/GibES4w.png"><img src="https://i.imgur.com/GibES4w.png" alt="Display when the user answers incorrectly" /></a>
+                <a class="js-thumbnail" href="#" data-src="https://i.imgur.com/buX7j7f.png"><img src="https://i.imgur.com/buX7j7f.png" alt="Display when the user answers incorrectly" /></a>
+                <a class="js-thumbnail" href="#" data-src="https://i.imgur.com/SKEoUlw.png"><img src="https://i.imgur.com/SKEoUlw.png" alt="Results page of the app" /></a>
             </div>
             <div class="app-info">
                 A simple trivia quiz app that tests the user’s knowledge about Austin, TX.<br>
                 List of technologies used: HTML, CSS, JavaScript (jQuery)<br>
-                Link to live app: https://samira-estes-garcia.github.io/ATX-Quiz/<br>
-                Link to repo: https://github.com/samira-estes-garcia/ATX-Quiz<br>
+                Link to live app: <a href="https://samira-estes-garcia.github.io/ATX-Quiz/">https://samira-estes-garcia.github.io/ATX-Quiz/</a><br>
+                Link to repo: <a href="https://github.com/samira-estes-garcia/ATX-Quiz/">https://github.com/samira-estes-garcia/ATX-Quiz/</a><br>
             </div>
         </section>
+        <section class="project-container-2">
+            <div class="project-title">
+                <h2>Next Project</h2>
+            </div>
+        </section>
+        </div>
     </main>
     <footer role="content-info">
         <div class="copyright">&copy; 2019 <b>Samira Estes-Garcia</b> All Rights Reserved</div>
         <nav class="footer-nav">
-            <a href="#">email</a>
-            <a href="#">phone</a>
-            <a href="#">linkedin</a>
-            <a href="#">github</a>
+            <a href="mailto: samira.estes.garcia@gmail.com"><img src="http://www.stickpng.com/assets/thumbs/584856a0e0bb315b0f7675a9.png" alt="icon of envelope"/></a>
+            <a href="https://www.linkedin.com/in/samira-estes-garcia/" target="_blank"><img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png" alt="linkedin logo" /></a>
+            <a href="https://github.com/samira-estes-garcia" target="_blank"><img src="http://assets.stickpng.com/thumbs/5847f98fcef1014c0b5e48c0.png" alt="github logo" /></a>
         </nav>
     </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="projects.js"></script>
 </body>
 </html>
