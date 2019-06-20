@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header {
@@ -120,6 +120,7 @@ a.mobile-active:hover {
 
 .main {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .container {
@@ -161,12 +162,11 @@ a.mobile-active:hover {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     border-top: 2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -268,11 +268,23 @@ footer {
     }
 }
 
+@media screen and (max-width: 700px) {
+    header img {
+        max-width: 20%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .copyright {
         font-size: 14px;
     }
     .footer-nav img {
         width: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header img {
+        max-width: 20%;
     }
 }

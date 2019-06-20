@@ -13,5 +13,14 @@ function changeThumbnail() {
     });
 }
 
-$(changeThumbnail);
+function changeThumbnailTwo() {
+    $('.js-thumbnail-2').on('click', function(event) 
+    {
+        const $imgSrc2 = $(this).find('img').attr('src');
+        const $imgAlt2 = $(this).find('img').attr('alt');
+        $('.hero-2 img').attr('src', $imgSrc2).attr('alt', $imgAlt2);
+    });
+}
 
+$(changeThumbnail);
+$(changeThumbnailTwo);

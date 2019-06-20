@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header {
@@ -119,6 +119,10 @@ a.mobile-active:hover {
     background-color: rgba(238, 241, 237, 0.863)!important;
 }
 
+main {
+    margin-bottom: 550px;
+}
+
 .main h1 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -159,12 +163,11 @@ a.mobile-active:hover {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     border-top: 2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -174,7 +177,7 @@ footer {
     margin-top: 10px;
 }
 
-.footer-nav{
+.footer-nav {
     text-align: center;
     margin-top: 10px;
 }
@@ -246,6 +249,9 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+    header img {
+        max-width: 20%;
+    }
     .bio-container {
         margin: 0;
     }
@@ -279,5 +285,11 @@ footer {
     }
     .footer-nav img {
         width: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header img {
+        max-width: 30%;
     }
 }
